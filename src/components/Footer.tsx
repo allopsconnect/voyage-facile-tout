@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Logo et description */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Plane className="h-8 w-8 text-orange-500" />
-              <h3 className="text-2xl font-bold">MarocTravel</h3>
+              <Plane className="h-8 w-8 text-yellow-500" />
+              <h3 className="text-2xl font-bold">nsafro.ma</h3>
             </div>
             <p className="text-gray-400 mb-4">
               Votre partenaire de confiance pour découvrir le Maroc. Hébergements, transport, restaurants et voyages organisés.
@@ -51,23 +51,23 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center">
-                <MapPin className="h-5 w-5 mr-3 text-orange-500" />
+                <MapPin className="h-5 w-5 mr-3 text-yellow-500" />
                 <span>Casablanca, Maroc</span>
               </div>
               <div className="flex items-center">
-                <Phone className="h-5 w-5 mr-3 text-orange-500" />
+                <Phone className="h-5 w-5 mr-3 text-yellow-500" />
                 <span>+212 5 22 XX XX XX</span>
               </div>
               <div className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 text-orange-500" />
-                <span>contact@maroctravel.ma</span>
+                <Mail className="h-5 w-5 mr-3 text-yellow-500" />
+                <span>contact@nsafro.ma</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 MarocTravel. Tous droits réservés.</p>
+          <p>&copy; 2024 nsafro.ma. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

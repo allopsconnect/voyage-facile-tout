@@ -4,7 +4,7 @@ import { Search } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-orange-500 text-white py-20">
+    <section className="bg-gradient-to-br from-gray-900 via-black to-yellow-500 text-white py-20">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-5xl font-bold mb-6">
           Découvrez le Maroc autrement
@@ -20,7 +20,7 @@ const Hero = () => {
               <input 
                 type="text" 
                 placeholder="Casablanca, Marrakech..." 
-                className="w-full p-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               />
             </div>
             
@@ -28,7 +28,7 @@ const Hero = () => {
               <label className="text-gray-700 font-semibold block mb-2">Arrivée</label>
               <input 
                 type="date" 
-                className="w-full p-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               />
             </div>
             
@@ -36,11 +36,11 @@ const Hero = () => {
               <label className="text-gray-700 font-semibold block mb-2">Départ</label>
               <input 
                 type="date" 
-                className="w-full p-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               />
             </div>
             
-            <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 flex items-center justify-center">
+            <button className="bg-gradient-to-r from-black to-yellow-500 text-white p-3 rounded-lg font-semibold hover:from-gray-800 hover:to-yellow-600 transition-all transform hover:scale-105 flex items-center justify-center">
               <Search className="h-5 w-5 mr-2" />
               Rechercher
             </button>

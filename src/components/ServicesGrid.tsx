@@ -22,14 +22,14 @@ const ServicesGrid = () => {
       icon: ChefHat,
       title: 'Restaurants',
       description: 'Découvrez les meilleurs restaurants par ville',
-      color: 'from-orange-500 to-red-500',
+      color: 'from-black to-yellow-500',
       href: '#restaurants'
     },
     {
       icon: Plane,
       title: 'Voyages Organisés',
       description: 'Circuits et bons plans à travers le royaume',
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-gray-800 to-yellow-400',
       href: '#voyages'
     }
   ];
@@ -61,7 +61,7 @@ const ServicesGrid = () => {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600">{service.description}</p>
-                  <div className="mt-4 text-orange-500 font-semibold group-hover:text-orange-600 transition-colors">
+                  <div className="mt-4 text-yellow-600 font-semibold group-hover:text-yellow-700 transition-colors">
                     Découvrir →
                   </div>
                 </div>
