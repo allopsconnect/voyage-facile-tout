@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Bed, MapPin, Star, Users, Calendar } from 'lucide-react';
 
@@ -46,7 +47,7 @@ const AccommodationSection = () => {
   ];
 
   return (
-    <section id="hebergements" className="py-20 bg-gray-100">
+    <section id="hebergements" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -58,12 +59,12 @@ const AccommodationSection = () => {
         </div>
 
         {/* Filtres */}
-        <div className="bg-white rounded-xl p-6 mb-12 shadow-lg">
+        <div className="bg-white rounded-xl p-6 mb-12 shadow-lg border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">Type</label>
               <select 
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
                 value={filters.type}
                 onChange={(e) => setFilters({...filters, type: e.target.value})}
               >
@@ -78,7 +79,7 @@ const AccommodationSection = () => {
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">Ville</label>
               <select 
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
                 value={filters.city}
                 onChange={(e) => setFilters({...filters, city: e.target.value})}
               >
@@ -94,7 +95,7 @@ const AccommodationSection = () => {
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">Prix par nuit</label>
               <select 
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
                 value={filters.priceRange}
                 onChange={(e) => setFilters({...filters, priceRange: e.target.value})}
               >
@@ -109,7 +110,7 @@ const AccommodationSection = () => {
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">Voyageurs</label>
               <select 
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
                 value={filters.guests}
                 onChange={(e) => setFilters({...filters, guests: e.target.value})}
               >
@@ -126,14 +127,14 @@ const AccommodationSection = () => {
         {/* Liste des hébergements */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {accommodations.map((accommodation) => (
-            <div key={accommodation.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
+            <div key={accommodation.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group border border-gray-100">
               <div className="relative">
                 <img 
                   src={accommodation.image} 
                   alt={accommodation.name}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-800">
+                <div className="absolute top-4 right-4 bg-black text-yellow-400 px-3 py-1 rounded-full text-sm font-semibold">
                   {accommodation.price}€/nuit
                 </div>
               </div>
@@ -148,7 +149,7 @@ const AccommodationSection = () => {
                 
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">
-                    <Star className="h-4 w-4 text-yellow-400 fill-current" />
+                    <Star className="h-4 w-4 text-yellow-500 fill-current" />
                     <span className="text-sm font-semibold ml-1">{accommodation.rating}</span>
                   </div>
                   <div className="flex items-center text-gray-600">
@@ -165,7 +166,7 @@ const AccommodationSection = () => {
                   ))}
                 </div>
                 
-                <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105">
+                <button className="w-full bg-gradient-to-r from-black to-gray-800 text-yellow-400 py-3 rounded-lg font-semibold hover:from-gray-800 hover:to-black transition-all transform hover:scale-105 border border-yellow-500">
                   Réserver maintenant
                 </button>
               </div>
