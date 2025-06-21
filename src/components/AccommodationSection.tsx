@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Bed, MapPin, Star, Users, Calendar } from 'lucide-react';
 
@@ -47,7 +46,7 @@ const AccommodationSection = () => {
   ];
 
   return (
-    <section id="hebergements" className="py-20 bg-white">
+    <section id="hebergements" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -59,7 +58,7 @@ const AccommodationSection = () => {
         </div>
 
         {/* Filtres */}
-        <div className="bg-gray-50 rounded-xl p-6 mb-12">
+        <div className="bg-white rounded-xl p-6 mb-12 shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">Type</label>

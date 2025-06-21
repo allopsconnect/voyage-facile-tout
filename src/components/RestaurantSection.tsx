@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChefHat, MapPin, Star, Clock } from 'lucide-react';
 
@@ -64,7 +65,7 @@ const RestaurantSection = () => {
   );
 
   return (
-    <section id="restaurants" className="py-20 bg-white">
+    <section id="restaurants" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -81,8 +82,8 @@ const RestaurantSection = () => {
             onClick={() => setSelectedCity('all')}
             className={`px-6 py-2 rounded-full font-semibold transition-all ${
               selectedCity === 'all' 
-                ? 'bg-orange-500 text-white' 
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                ? 'bg-yellow-500 text-black' 
+                : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
             }`}
           >
             Toutes les villes
@@ -93,8 +94,8 @@ const RestaurantSection = () => {
               onClick={() => setSelectedCity(city.id)}
               className={`px-6 py-2 rounded-full font-semibold transition-all ${
                 selectedCity === city.id 
-                  ? 'bg-orange-500 text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-yellow-500 text-black' 
+                  : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
               }`}
             >
               {city.name}
