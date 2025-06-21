@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Bed, Car, Restaurant, Plane, MapPin, Calendar } from 'lucide-react';
+import { Bed, Car, ChefHat, Plane, MapPin, Calendar } from 'lucide-react';
 
 const ServicesGrid = () => {
   const services = [
@@ -19,7 +19,7 @@ const ServicesGrid = () => {
       href: '#transport'
     },
     {
-      icon: Restaurant,
+      icon: ChefHat,
       title: 'Restaurants',
       description: 'Découvrez les meilleurs restaurants par ville',
       color: 'from-orange-500 to-red-500',

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Plane, Car, Bed, Restaurant } from 'lucide-react';
+import { Plane, Car, Bed, ChefHat } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
               Transport
             </a>
             <a href="#restaurants" className="hover:text-orange-200 transition-colors">
-              <Restaurant className="h-5 w-5 inline mr-2" />
+              <ChefHat className="h-5 w-5 inline mr-2" />
               Restaurants
             </a>
             <a href="#voyages" className="hover:text-orange-200 transition-colors">

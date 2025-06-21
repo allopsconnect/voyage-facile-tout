@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Restaurant, MapPin, Star, Clock } from 'lucide-react';
+import { ChefHat, MapPin, Star, Clock } from 'lucide-react';
 
 const RestaurantSection = () => {
   const [selectedCity, setSelectedCity] = useState('marrakech');
