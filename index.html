@@ -14,17 +14,35 @@
     <header class="header">
         <div class="container">
             <div class="nav-brand">
-                <h1>nsafro.ma</h1>
+                <div class="logo-container">
+                    <i data-lucide="plane"></i>
+                    <h1>nsafro.ma</h1>
+                </div>
             </div>
             <nav class="nav-menu">
-                <a href="#hebergements">Hébergements</a>
-                <a href="#transport">Transport</a>
-                <a href="#restaurants">Restaurants</a>
-                <a href="#voyages">Voyages</a>
+                <a href="#hebergements">
+                    <i data-lucide="bed"></i>
+                    Hébergements
+                </a>
+                <a href="#transport">
+                    <i data-lucide="car"></i>
+                    Transport
+                </a>
+                <a href="#restaurants">
+                    <i data-lucide="chef-hat"></i>
+                    Restaurants
+                </a>
+                <a href="#voyages">
+                    <i data-lucide="plane"></i>
+                    Voyages
+                </a>
             </nav>
-            <button class="nav-toggle">
-                <i data-lucide="menu"></i>
-            </button>
+            <div class="nav-actions">
+                <button class="connexion-btn">Connexion</button>
+                <button class="nav-toggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -69,7 +87,7 @@
 
             <div class="services-grid">
                 <a href="#hebergements" class="service-card">
-                    <div class="service-icon blue-gradient">
+                    <div class="service-icon black-blue-gradient">
                         <i data-lucide="bed"></i>
                         <h3>Hébergements</h3>
                     </div>
@@ -102,7 +120,7 @@
                 </a>
 
                 <a href="#voyages" class="service-card">
-                    <div class="service-icon gray-yellow-gradient">
+                    <div class="service-icon gray-blue-gradient">
                         <i data-lucide="plane"></i>
                         <h3>Voyages Organisés</h3>
                     </div>
@@ -114,6 +132,73 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo et description -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i data-lucide="plane"></i>
+                        <h3>nsafro.ma</h3>
+                    </div>
+                    <p>Votre partenaire de confiance pour découvrir le Maroc. Hébergements, transport, restaurants et voyages organisés.</p>
+                    <div class="social-links">
+                        <i data-lucide="facebook"></i>
+                        <i data-lucide="instagram"></i>
+                        <i data-lucide="twitter"></i>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Nos Services</h4>
+                    <ul>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#transport">Transport</a></li>
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#voyages">Voyages organisés</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div class="footer-section">
+                    <h4>Destinations Populaires</h4>
+                    <ul>
+                        <li><a href="#">Marrakech</a></li>
+                        <li><a href="#">Casablanca</a></li>
+                        <li><a href="#">Fès</a></li>
+                        <li><a href="#">Agadir</a></li>
+                        <li><a href="#">Chefchaouen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Casablanca, Maroc</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>+212 5 22 XX XX XX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>contact@nsafro.ma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 nsafro.ma. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Initialize Lucide icons
