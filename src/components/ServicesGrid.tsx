@@ -46,22 +46,22 @@ const ServicesGrid = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <a
                 key={index}
                 href={service.href}
-                className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+                className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex-1 min-w-0"
               >
-                <div className={`bg-gradient-to-r ${service.color} p-6 text-white`}>
-                  <Icon className="h-12 w-12 mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                <div className={`bg-gradient-to-r ${service.color} p-4 lg:p-6 text-white`}>
+                  <Icon className="h-8 w-8 lg:h-12 lg:w-12 mb-2 lg:mb-4 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg lg:text-xl font-bold mb-1 lg:mb-2">{service.title}</h3>
                 </div>
-                <div className="p-6">
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <div className="text-yellow-600 font-semibold group-hover:text-yellow-700 transition-colors">
+                <div className="p-4 lg:p-6">
+                  <p className="text-gray-600 mb-3 lg:mb-4 text-sm lg:text-base">{service.description}</p>
+                  <div className="text-yellow-600 font-semibold group-hover:text-yellow-700 transition-colors text-sm lg:text-base">
                     Découvrir →
                   </div>
                 </div>
