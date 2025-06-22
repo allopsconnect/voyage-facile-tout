@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Bed, Car, ChefHat, Plane, MapPin, Calendar } from 'lucide-react';
+import { Bed, Car, ChefHat, Plane } from 'lucide-react';
 
 const ServicesGrid = () => {
   const services = [
@@ -8,7 +8,7 @@ const ServicesGrid = () => {
       icon: Bed,
       title: 'Hébergements',
       description: 'Appartements, villas, hôtels et chambres dans tout le Maroc',
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-black to-blue-600',
       href: '#hebergements'
     },
     {
@@ -29,7 +29,7 @@ const ServicesGrid = () => {
       icon: Plane,
       title: 'Voyages Organisés',
       description: 'Circuits et bons plans à travers le royaume',
-      color: 'from-gray-800 to-yellow-400',
+      color: 'from-gray-800 to-blue-500',
       href: '#voyages'
     }
   ];
@@ -60,8 +60,8 @@ const ServicesGrid = () => {
                   <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                 </div>
                 <div className="p-6">
-                  <p className="text-gray-600">{service.description}</p>
-                  <div className="mt-4 text-yellow-600 font-semibold group-hover:text-yellow-700 transition-colors">
+                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <div className="text-yellow-600 font-semibold group-hover:text-yellow-700 transition-colors">
                     Découvrir →
                   </div>
                 </div>
